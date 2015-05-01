@@ -1,0 +1,81 @@
+
+<html>
+    <head>
+        <title>Currency App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+         <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="mycss.css">
+        <link rel="icon" sizes="192x192" href="calculator.jpg" />
+        <link rel="apple-touch-icon" href="calculator.jpg" />
+        <link rel="shortcut icon" href="calculator.jpg" type="image/x-icon" />
+
+    </head>
+
+    <header>Currency Translator</header>
+
+
+    <nav id="nav">
+        <p id="navmenu"><img src="menu.png" alt="Show" width="32" height="32"/></p>
+        <div id="navelem">
+
+            <p>Existing</br>Currency</p>
+            <select id = "ExistingCurrency" style="width:5.0em;">
+                <option value="USD"> USD</option>
+                <option value="EUR" > EUR</option>
+                <option value ="GBP"> GBP</option>
+                <option value ="JPY"> JPY</option>
+                <option value ="CHI"> CHI</option>
+            </select>
+
+            <p>Transfer</br>Currency</p>
+            <select id = "TransferCurrency" style="width:5.0em;">
+                <option value="USD"> USD</option>
+                <option value="EUR" > EUR</option>
+                <option value="GBP"> GBP</option>
+                <option value="JPY"> JPY</option>
+                <option value="CHI"> CHI</option>
+           </select>
+
+
+            <p>Bank</br>Cut</p>
+            <select id = "bankCut" style = "width5.0em;">
+                <option value="1.00"  >0.0%</option>
+                <option value="0.98">2.0%</option>
+                <option value="0.96">4.0%</option>
+                <option value="0.94">6.0%</option>
+            </select>
+    </nav>
+
+
+    <section id="mainsection" class="mainsection">
+        <input class ="display" type ="text" id="output" readonly>
+        <br>
+        <button class = "btn" id="one" value="1">1</button>
+        <button class = "btn" id="two" value="2">2</button>
+        <button class = "btn" id="three" value="3">3</button>
+        <br>
+        <button class = "btn" id="four" value="4">4</button>
+        <button class = "btn" id="five" value="5">5</button>
+        <button class = "btn" id="six" value="6">6</button>
+        <br>
+        <button class = "btn" id="seven" value="7">7</button>
+        <button class = "btn" id="eight" value="8">8</button>
+        <button class = "btn" id="nine"  value="9">9</button>
+        <br>
+        <button class = "btn" id="reset" value="reset">c</button>
+        <button class = "btn" id="zero" value="0">0</button>
+        <button class = "btn" id="equals" value="equals">=</button>
+
+    </section>
+
+
+    <script src="CalcModel.js"></script>
+    <script src="CalcView.js"></script>
+    <script src="CalcController.js"></script>
+    <footer>Fraser McEwan</footer>
+
+</html>
